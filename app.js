@@ -54,10 +54,10 @@ Complete the exercise in the space below:
 */
 
 function isCharAVowel(char) {
-    if (char === "a", "e", "i", "o", "u") {
-        return (`True`);
+    if (char.toLowerCase() === "a" || char.toLowerCase() === "e" || char.toLowerCase() === "i" || char.toLowerCase() === "o" || char.toLowerCase() === "u") {
+        return true;
     } else {
-        return (`False`);
+        return false;
     }
 }
 
@@ -94,12 +94,10 @@ Complete the exercise in the space below:
 */
 
 function greetUser(name, timeOfDay) {
-    if (timeOfDay === "morning") {
-        return (`Good morning, ${name}!`);
-    } else if (timeOfDay === "afternoon") {
-        return (`Good afternoon, ${name}!`);
+    if (timeOfDay === "morning" || timeOfDay === "afternoon" || timeOfDay === "evening") {
+        return (`Good ${timeOfDay}, ${name}!`);
     } else {
-        return (`Good evening, ${name}!`);
+        return (`This is not a valid time of day!`);
     }
 }
 
@@ -186,8 +184,16 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-function basicCalculator(numOne, numTwo, operator) {
-
+function basicCalculator(firstOper, secondOper, equation) {
+    if (equation === 'add') {
+        return firstOper + secondOper;
+    } else if (equation === 'subtract') {
+        return firstOper - secondOper;
+    } else if (equation === 'multiply') {
+        return firstOper * secondOper;
+    } else if (equation === 'divide') {
+        return firstOper / secondOper;
+    }
 }
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));

@@ -31,9 +31,9 @@ Complete the exercise in the space below:
 
 function isAdult(age) {
     if (age >= 18) {
-        return (`Adult`);
+        return `Adult`;
     } else {
-        return (`Minor`);
+        return `Minor`;
     }
 
 }
@@ -76,7 +76,7 @@ Complete the exercise in the space below:
 */
 
 function generateEmail(name, domain) {
-    return (`${name}@${domain}`);
+    return `${name}@${domain}`;
 }
 
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
@@ -95,9 +95,9 @@ Complete the exercise in the space below:
 
 function greetUser(name, timeOfDay) {
     if (timeOfDay === "morning" || timeOfDay === "afternoon" || timeOfDay === "evening") {
-        return (`Good ${timeOfDay}, ${name}!`);
+        return `Good ${timeOfDay}, ${name}!`;
     } else {
-        return (`This is not a valid time of day!`);
+        return `This is not a valid time of day!`;
     }
 }
 
